@@ -57,3 +57,8 @@ x, y, z = 0, 0, 0
 same with the values, and Python will assign each value to its respectively 
 positioned variable. As long as the number of values matches the number of 
 variables, Python will match them up correctly.'''
+
+fav_number = 8
+
+print("Hello, my name is Rodrigo and my favourite number is", fav_number)
+ 
