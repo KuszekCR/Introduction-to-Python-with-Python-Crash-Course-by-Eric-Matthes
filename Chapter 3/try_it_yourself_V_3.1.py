@@ -38,6 +38,6 @@ the {cars[-1].capitalize()} series because of the models it had."""
 print(message_2)
 
 ### TIP FOR LONG MESSAGES ###
-Correct: Using triple quotes
-    long_message = f"""This is a very long string 
-                   that spans multiple lines.""" 
+#Correct: Using triple quotes
+long_message = f"""This is a very long string 
+                   that spans multiple lines."""  # noqa: F541
