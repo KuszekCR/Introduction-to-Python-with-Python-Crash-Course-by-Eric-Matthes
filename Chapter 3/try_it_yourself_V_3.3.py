@@ -20,25 +20,67 @@ Print the list to show that its order has changed.'''
 
 places_to_visit = ["tokio", "galápagos", "nueva york", "málaga", "marruecos", "egipto"]
 
-print(places_to_visit)
+#print(places_to_visit)
 
-print(sorted(places_to_visit)) # It temporarily sorts the previous list alphabetically.
+#print(sorted(places_to_visit)) # It temporarily sorts the previous list alphabetically.
 
-print(places_to_visit) # Here we see that the list still contains the elements sorted the original way.
+#print(places_to_visit) # Here we see that the list still contains the elements sorted the original way.
 
-print(sorted(places_to_visit, reverse=True)) # I got it right 1st try :D
+#print(sorted(places_to_visit, reverse=True)) # I got it right 1st try :D
 
-print(places_to_visit)
+#print(places_to_visit)
 
-places_to_visit.reverse()
-print(places_to_visit) 
+#places_to_visit.reverse()
+#print(places_to_visit) 
 
-places_to_visit.reverse()
-print(places_to_visit) # We just reversed the previously reversed list. We got the original list back!
+#places_to_visit.reverse()
+#print(places_to_visit) # We just reversed the previously reversed list. We got the original list back!
 
-places_to_visit.sort()
-print(places_to_visit)
+#places_to_visit.sort()
+#print(places_to_visit)
 
-places_to_visit.sort(reverse=True)
-print(places_to_visit)
+#places_to_visit.sort(reverse=True)
+#print(places_to_visit)
 
+
+''' 3-9. Dinner Guests: Working with one of the programs from Exercises 3-4 
+through 3-7 (page 42), use len() to print a message indicating the number 
+of people you are inviting to dinner.'''
+
+#list_of_people = ["di stefano", "alan turing", "'locomotora' oliveras", "ariel ortega"]
+#print("We have invitations for", len(list_of_people), "people.")
+
+'''3-10. Every Function: Think of something you could store in a list. For example, 
+you could make a list of mountains, rivers, countries, cities, languages, or any
+thing else you’d like. Write a program that creates a list containing these items 
+and then uses each function introduced in this chapter at least once.'''
+
+sudamerica = ["argentina", "brazil", "chile", "uruguay", "venezuela", "ecuador", "colombia", "paraguay", "bolivia", "peru"]
+print(sudamerica)
+print(sorted(sudamerica))
+print(sudamerica) #The list mantains its original form.
+
+print(sorted(sudamerica, reverse=True))
+print(sudamerica)
+
+sudamerica.insert(10, "surinam")
+print(sudamerica)
+
+sudamerica.append("guyana")
+print(sudamerica)
+
+del sudamerica[11]
+print(sudamerica)
+del sudamerica[10]
+print(sudamerica)
+
+popped_peru = sudamerica.pop()
+print(sudamerica)
+print(popped_peru)
+
+popped_argentina = sudamerica.pop(0)
+print(sudamerica)
+print(popped_argentina)
+
+sudamerica.remove("brazil")
+print(sudamerica)
